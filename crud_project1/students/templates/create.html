@@ -1,0 +1,13 @@
+<body>
+
+<form method="POST">
+    {%csrf_token%}
+
+    {{form.as_p}}
+    <button type="submit">Save student</button>
+
+</form>
+
+<a href="{%url 'student_list'%}">View students</a>
+
+</body>
